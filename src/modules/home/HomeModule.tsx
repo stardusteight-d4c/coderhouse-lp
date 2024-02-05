@@ -7,6 +7,7 @@ export const HomeModule = () => {
       <Home.Navbar />
       <Home.Hero />
       <Home.CertifyingCompanies />
+      <Home.VideoShowcase />
     </main>
   )
 }
