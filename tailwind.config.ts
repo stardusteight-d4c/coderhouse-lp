@@ -20,6 +20,7 @@ const config: Config = {
         dark: {
           main: "#1A1A1A",
           secondary: "#2e2f36",
+          tertiary: "#999999",
         },
       },
     },

@@ -1,4 +1,4 @@
-import { CaretDown, MenuBar } from "@/shared/components/atoms/icons"
+import { CaretDown, MenuBar } from "@/shared/components/atoms"
 
 interface NavbarProps extends React.HTMLAttributes<HTMLDivElement> {}
 
