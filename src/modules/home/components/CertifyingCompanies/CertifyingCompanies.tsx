@@ -15,7 +15,7 @@ export const CertifyingCompanies: React.FC<CertifyingCompaniesProps> = (
   ]
 
   return (
-    <div className="max-w-7xl w-full text-center mx-auto px-2 text-brand-light">
+    <section className="max-w-7xl w-full text-center mx-auto px-2 text-brand-light">
       <h3 className="leading-[30px] text-xl text-center w-full mb-14">
         Cursos e Carreiras oficialmente certificados pela
       </h3>
@@ -33,6 +33,6 @@ export const CertifyingCompanies: React.FC<CertifyingCompaniesProps> = (
         Conheça mais sobre as empresas que nos certificam
       </span>
       <Divider className="mt-[48px] mb-[124px]" />
-    </div>
+    </section>
   )
 }

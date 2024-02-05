@@ -1,12 +1,12 @@
 import { Navbar, MegaSaleAds } from "@/shared/components/organisms"
 import { Hero } from "./Hero"
 import { CertifyingCompanies } from "./CertifyingCompanies"
-import { VideoShowcase } from "./VideoShowcase"
+import { Showcase } from "./Showcase"
 
 export const Home = {
   MegaSaleAds,
   Navbar,
   Hero,
   CertifyingCompanies,
-  VideoShowcase
+  Showcase
 }
