@@ -8,6 +8,7 @@ export const HomeModule = () => {
       <Home.Hero />
       <Home.CertifyingCompanies />
       <Home.Showcase />
+      <Home.Colleagues />
     </main>
   )
 }
