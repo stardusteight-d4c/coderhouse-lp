@@ -5,6 +5,7 @@ export const HomeModule = () => {
     <main className="min-h-screen bg-dark-main w-screen">
       <Home.MegaSaleAds />
       <Home.Navbar />
+      <Home.Hero />
     </main>
   )
 }
