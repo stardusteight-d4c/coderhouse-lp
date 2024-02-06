@@ -67,32 +67,71 @@ export const Collapsible: React.FC<CollapsibleProps> = ({
     }
   }
 
+  function handleCircleAnimation(title: string) {
+    if (active === title) {
+      return {
+        width: "0px",
+        height: "0px",
+        border: "2px solid transparent",
+        animation: "grow 300ms forwards",
+      }
+    }
+  }
+
+  function renderCircleRing(title: string) {
+    if (active === title) {
+      return (
+        <div
+          style={handleCircleAnimation(title)}
+          className="bg-dark-main absolute max-w-[32px] rounded-full z-[1] max-h-[32px]"
+        />
+      )
+    }
+  }
+
+  const keyframes = `
+    @keyframes grow {
+      0% {
+        width: 0px;
+        height: 0px;
+        border: 2px solid;
+        borderColor: #F4FF80;
+      }
+      100% {
+        width: 32px; 
+        height: 32px; 
+        border: 2px solid;
+        borderColor: #F4FF80;
+      }
+    }
+  `
+
   return (
     <div>
       {data.map((item, index) => (
-        <div
-          key={index}
-          className="h-full transition-all ease-in-out duration-300 relative pb-[59px]"
-        >
+        <div key={index} className="h-full relative pb-[59px]">
           <div
             className={
-              "w-[2px] transition-all ease-in-out duration-300 h-full absolute top-4 left-[7px] " +
-              handleConnect(index)
+              "w-[2px] h-full absolute top-4 left-[7px] " + handleConnect(index)
             }
           />
           <h3
             onClick={() => handleActiveItem(item.title)}
             className={
-              "flex items-center transition-all ease-in-out duration-300 group gap-x-16 cursor-pointer text-3xl leading-[36px] font-medium " +
+              "flex items-center group gap-x-16 cursor-pointer text-3xl leading-[36px] font-medium " +
               handleTitleColor(item.title)
             }
           >
-            <div
-              className={
-                "rounded-full max-w-[16px] transition-all ease-in-out duration-300 max-h-[16px] min-w-[16px] min-h-[16px] w-4 h-4 z-[100] bg-brand-green-light " +
-                handleConnect(index, true)
-              }
-            />
+            <div className="relative flex items-center justify-center ">
+              <div
+                className={
+                  "rounded-full max-w-[16px] max-h-[16px] min-w-[16px] min-h-[16px] w-4 h-4 z-[100] bg-brand-green-light " +
+                  handleConnect(index, true)
+                }
+              />
+              <style>{keyframes}</style>
+             {renderCircleRing(item.title)}
+            </div>
             {item.title}
           </h3>
           <div
