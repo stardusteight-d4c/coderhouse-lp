@@ -5,34 +5,24 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/shared/components/molecules/Carousel"
-import { Plan } from "../../molecules/cards"
+import { Plan } from "@/shared/components/molecules/cards"
+import { IPlan } from "@/shared/components/molecules/cards/Plan/types"
 
-interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
+  data: Array<IPlan>
+}
 
-export const Carousel: React.FC<CarouselProps> = (props: CarouselProps) => {
+export const Carousel: React.FC<CarouselProps> = ({ data }: CarouselProps) => {
   return (
     <CarouselRoot>
       <CarouselContent className="min-w-[400px] max-w-[400px]">
-        <CarouselItem>
-          <Plan />
-        </CarouselItem>
-        <CarouselItem>
-          <Plan />
-        </CarouselItem>
-        <CarouselItem>
-          <Plan />
-        </CarouselItem>
-        <CarouselItem>
-          <Plan />
-        </CarouselItem>
-        <CarouselItem>
-          <Plan />
-        </CarouselItem>
-        <CarouselItem>
-          <Plan />
-        </CarouselItem>
+        {data.map((item, index) => (
+          <CarouselItem key={index}>
+            <Plan data={item} />
+          </CarouselItem>
+        ))}
       </CarouselContent>
-      <CarouselPrevious />
+      <CarouselPrevious className="text-brand-green-main" />
       <CarouselNext />
     </CarouselRoot>
   )
