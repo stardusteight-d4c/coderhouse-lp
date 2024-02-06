@@ -21,18 +21,18 @@ export const Tab: React.FC<TabProps> = ({ tabs, onTabChange }: TabProps) => {
     if (active === tab) {
       return "bg-brand-light text-dark-main"
     } else {
-      return "bg-dark-tertiary/10 text-brand-light"
+      return "hover:bg-dark-tertiary/30 bg-dark-tertiary/10 text-brand-light"
     }
   }
 
   return (
-    <div className="flex items-center gap-x-3">
+    <div className="flex items-center gap-x-3 mb-10 mt-11">
       {tabs.map((tab, index) => (
         <div
           key={index}
           onClick={() => handleTabChange(tab)}
           className={
-            "py-2 px-3 flex cursor-pointer items-center rounded-sm justify-center text-center whitespace-nowrap " +
+            "py-2 px-3 flex cursor-pointer transition-all ease-in duration-200 items-center rounded-sm justify-center text-center whitespace-nowrap " +
             handleColor(tab)
           }
         >
