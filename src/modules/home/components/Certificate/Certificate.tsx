@@ -1,4 +1,4 @@
-import { Collapsible } from "./components"
+import { Collapsible } from "@/shared/components/molecules"
 
 interface CertificateProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -31,7 +31,7 @@ export const Certificate: React.FC<CertificateProps> = (
           autoPlay
           loop
           muted
-          className="rounded-xl shadow-sm shadow-black/10 overflow-hidden"
+          className="rounded-sm overflow-hidden"
         />
       </div>
     </section>

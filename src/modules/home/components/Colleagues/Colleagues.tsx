@@ -12,7 +12,7 @@ export const Colleagues: React.FC<ColleaguesProps> = (
             autoPlay
             loop
             muted
-            className="rounded-xl shadow-sm shadow-black/10 overflow-hidden"
+            className="rounded-sm overflow-hidden"
           />
         </div>
         <div className="col-span-1">

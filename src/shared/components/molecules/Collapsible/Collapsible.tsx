@@ -15,22 +15,33 @@ export const Collapsible: React.FC<CollapsibleProps> = ({
   if (!data) return
   const [active, setActive] = useState<string>(data[0].title)
 
-  function handleConnect(index: number, circleColor?: boolean) {
+  function handleConnect({
+    index,
+    title,
+    circleColor,
+  }: {
+    index: number
+    title: string
+    circleColor?: boolean
+  }) {
     const activeItemIndex = data.findIndex((item) => item.title === active)
+    const charactersQuantity = title.length
+    let top =
+      charactersQuantity > 35 ? "top-[28px] h-[95%]" : "top-[16px] h-[100%]"
     if (!circleColor) {
       if (index + 1 === data.length) {
         return "hidden"
       }
       if (index < activeItemIndex) {
-        return "bg-brand-green-light"
+        return "bg-brand-green-light " + top
       } else {
-        return "bg-dark-secondary"
+        return "bg-dark-secondary " + top
       }
     } else {
       if (index <= activeItemIndex) {
-        return "bg-brand-green-light"
+        return "bg-brand-green-light " + top
       } else {
-        return "bg-dark-secondary"
+        return "bg-dark-secondary " + top
       }
     }
   }
@@ -112,7 +123,8 @@ export const Collapsible: React.FC<CollapsibleProps> = ({
         <div key={index} className="h-full relative pb-[59px]">
           <div
             className={
-              "w-[2px] h-full absolute top-4 left-[7px] " + handleConnect(index)
+              "w-[2px] absolute left-[7px] " +
+              handleConnect({ index, title: item.title })
             }
           />
           <h3
@@ -126,11 +138,11 @@ export const Collapsible: React.FC<CollapsibleProps> = ({
               <div
                 className={
                   "rounded-full max-w-[16px] max-h-[16px] min-w-[16px] min-h-[16px] w-4 h-4 z-[100] bg-brand-green-light " +
-                  handleConnect(index, true)
+                  handleConnect({ index, title: item.title, circleColor: true })
                 }
               />
               <style>{keyframes}</style>
-             {renderCircleRing(item.title)}
+              {renderCircleRing(item.title)}
             </div>
             {item.title}
           </h3>

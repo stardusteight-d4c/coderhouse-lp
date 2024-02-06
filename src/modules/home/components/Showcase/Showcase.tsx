@@ -2,7 +2,7 @@ interface ShowcaseProps extends React.HTMLAttributes<HTMLVideoElement> {}
 
 export const Showcase: React.FC<ShowcaseProps> = (props: ShowcaseProps) => {
   return (
-    <section className="max-w-7xl mx-auto text-dark-main w-full px-2">
+    <section className="max-w-7xl mx-auto text-dark-main w-full">
       <video
         src="/assets/mp4/showcase.mp4"
         autoPlay
