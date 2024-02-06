@@ -11,6 +11,7 @@ export const HomeModule = () => {
       <Home.Colleagues />
       <Home.Certificate />
       <Home.Opportunities />
+      <Home.CoderBolsa />
     </main>
   )
 }

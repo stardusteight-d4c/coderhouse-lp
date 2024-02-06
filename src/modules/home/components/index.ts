@@ -5,6 +5,7 @@ import { Showcase } from "./Showcase"
 import { Colleagues } from "./Colleagues"
 import { Certificate } from "./Certificate"
 import { Opportunities } from "./Opportunities"
+import { CoderBolsa } from "./CoderBolsa"
 
 export const Home = {
   MegaSaleAds,
@@ -15,4 +16,5 @@ export const Home = {
   Colleagues,
   Certificate,
   Opportunities,
+  CoderBolsa
 }
