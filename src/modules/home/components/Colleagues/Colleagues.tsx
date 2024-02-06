@@ -17,13 +17,13 @@ export const Colleagues: React.FC<ColleaguesProps> = (
         </div>
         <div className="col-span-1">
           <div className="flex items-center gap-x-4 mb-2">
-            <span className="block rounded-full font-medium bg-brand-green-light text-dark-main px-2 py-1">
+            <span className="block rounded-sm font-medium bg-brand-green-light text-dark-main px-2 py-1">
               Aulas em grupo
             </span>
-            <span className="block rounded-full font-medium bg-brand-green-light text-dark-main px-2 py-1">
+            <span className="block rounded-sm font-medium bg-brand-green-light text-dark-main px-2 py-1">
               Canais de chat
             </span>
-            <span className="block rounded-full font-medium bg-brand-green-light text-dark-main px-2 py-1">
+            <span className="block rounded-sm font-medium bg-brand-green-light text-dark-main px-2 py-1">
               Fórum privado
             </span>
           </div>

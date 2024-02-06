@@ -16,7 +16,7 @@ export const Hero: React.FC<HeroProps> = (props: HeroProps) => {
           com foco 100% prático, mentorias personalizadas e acesso a uma
           comunidade de +280.000 estudantes.
         </span>
-        <button className="px-4 block font-medium mx-auto py-5 bg-brand-green-light rounded text-dark-main hover:bg-brand-green-main transition-all ease-in-out">
+        <button className="px-4 block font-medium mx-auto py-5 bg-brand-green-light rounded-sm text-dark-main hover:bg-brand-green-main transition-all ease-in-out">
           Veja todos os cursos
         </button>
       </div>

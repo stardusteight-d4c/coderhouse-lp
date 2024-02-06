@@ -8,7 +8,7 @@ export const CoderBolsa: React.FC<CoderBolsaProps> = (
 ) => {
   return (
     <section className="max-w-7xl w-full mx-auto">
-      <div className="w-full rounded px-[120px] gap-x-[100px] py-[56px] text-dark-main bg-gradient-to-br from-brand-green-light to-brand-green-main grid grid-cols-2 items-center">
+      <div className="w-full rounded-sm px-[120px] gap-x-[100px] py-[56px] text-dark-main bg-gradient-to-br from-brand-green-light to-brand-green-main grid grid-cols-2 items-center">
         <div className="col-span-1">
           <h3 className="text-7xl font-bold mb-5 tracking-[-1.8px]">O que é a CoderBolsa?</h3>
           <p className="text-xl">
@@ -19,7 +19,7 @@ export const CoderBolsa: React.FC<CoderBolsaProps> = (
           </p>
         </div>
         <div className="col-span-1">
-          <div className="rounded shadow-md shadow-black/50 py-[40px] px-[50px] bg-dark-main text-brand-light">
+          <div className="rounded-sm shadow-md shadow-black/50 py-[40px] px-[50px] bg-dark-main text-brand-light">
             <h3 className="text-4xl font-bold mb-5">Como acesso?</h3>
             <div className="text-dark-low font-medium">
               <p className="mb-11">
