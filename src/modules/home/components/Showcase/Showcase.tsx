@@ -12,7 +12,7 @@ export const Showcase: React.FC<ShowcaseProps> = (props: ShowcaseProps) => {
       />
       <div className="w-full grid grid-cols-2 gap-10">
         <div className="col-span-1 row-span-1 col-start-1 w-full rounded py-9 px-8 bg-brand-green-light">
-          <h3 className="text-5xl font-bold leading-[50px]">
+          <h3 className="text-5xl tracking-[-1.8px] font-bold leading-[50px]">
             Educação online de alta qualidade ao seu alcance
           </h3>
           <span className="block mt-4 font-medium">
@@ -37,7 +37,7 @@ export const Showcase: React.FC<ShowcaseProps> = (props: ShowcaseProps) => {
             alt="user-violet/png"
             className="absolute w-[84px] h-[84px] -right-14 -bottom-4"
           />
-          <h3 className="text-5xl font-bold leading-[50px]">Tutores</h3>
+          <h3 className="text-5xl tracking-[-1.8px] font-bold leading-[50px]">Tutores</h3>
           <span className="block mt-4 font-medium">
             Em cada curso você terá um tutor para tirar dúvidas e receber
             feedbacks sobre seus projetos sempre que precisar.
@@ -53,7 +53,7 @@ export const Showcase: React.FC<ShowcaseProps> = (props: ShowcaseProps) => {
               className="rounded overflow-hidden max-h-[512px] mb-4 w-fit h-full"
             />
           </div>
-          <h3 className="text-5xl font-bold leading-[50px]">
+          <h3 className="text-5xl tracking-[-1.8px] font-bold leading-[50px]">
             Professores especialistas
           </h3>
           <span className="block mt-4 font-medium">

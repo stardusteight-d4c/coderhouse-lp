@@ -1,3 +1,6 @@
+import { Divider } from "@/shared/components/atoms"
+import { ArrowDown } from "@/shared/components/atoms/icons"
+
 interface CoderBolsaProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const CoderBolsa: React.FC<CoderBolsaProps> = (
@@ -5,9 +8,9 @@ export const CoderBolsa: React.FC<CoderBolsaProps> = (
 ) => {
   return (
     <section className="max-w-7xl w-full mx-auto">
-      <div className="w-full rounded px-[120px] gap-x-[100px] py-[56px] text-dark-main bg-gradient-to-br from-brand-green-light to-brand-green-main grid grid-cols-2">
+      <div className="w-full rounded px-[120px] gap-x-[100px] py-[56px] text-dark-main bg-gradient-to-br from-brand-green-light to-brand-green-main grid grid-cols-2 items-center">
         <div className="col-span-1">
-          <h3 className="text-7xl font-bold mb-5">O que é a CoderBolsa?</h3>
+          <h3 className="text-7xl font-bold mb-5 tracking-[-1.8px]">O que é a CoderBolsa?</h3>
           <p className="text-xl">
             Nossa missão é democratizar a educação de qualidade na América
             Latina. E como forma de tornar isso real, criamos a CoderBolsa, uma
@@ -20,15 +23,22 @@ export const CoderBolsa: React.FC<CoderBolsaProps> = (
             <h3 className="text-4xl font-bold mb-5">Como acesso?</h3>
             <div className="text-dark-low font-medium">
               <p className="mb-11">
-                O acesso à CoderBolsa é <strong>automático e para todos</strong>, você só precisa
-                atender a 2 requisitos quando estiver dentro do curso:
+                O acesso à CoderBolsa é <strong>automático e para todos</strong>
+                , você só precisa atender a 2 requisitos quando estiver dentro
+                do curso:
               </p>
-              <p className="mb-5">• Entregar desafios práticos no prazo de 7 dias corridos;</p>
-              <p className="">• Ter 85% de presença nas aulas ao vivo.</p>
+              <p className="mb-5">
+                • Entregar desafios práticos no prazo de 7 dias corridos;
+              </p>
+              <p>• Ter 85% de presença nas aulas ao vivo.</p>
+              <span className="flex items-center gap-x-1 w-fit hover:underline text-brand-green-main font-normal mt-5 cursor-pointer">
+                Ver cursos e carreiras <ArrowDown color="#D1E500" />
+              </span>
             </div>
           </div>
         </div>
       </div>
+      <Divider className="my-[132px] col-span-2" />
     </section>
   )
 }
