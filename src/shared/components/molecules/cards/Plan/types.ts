@@ -1,6 +1,6 @@
 export interface IPlan {
   header?: string
-  type: "Design UX/UI" | "Programação" | "Produto" | "Data"
+  type: Array<string>
   off?: string
   title: string
   courses?: Array<string>

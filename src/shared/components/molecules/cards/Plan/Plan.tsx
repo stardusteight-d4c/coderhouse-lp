@@ -8,8 +8,8 @@ interface PlanProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
   return (
-    <div className="h-[610px] relative">
-      <div className="border h-full rounded-sm min-h-[607px] max-h-[607px] hover:bg-dark-tertiary/10 transition-all ease-in text-brand-light border-brand-green-light min-w-[375px] max-w-[375px]">
+    <div className="h-[625px] relative">
+      <div className="border h-full rounded-sm min-h-[620px] max-h-[620px] hover:bg-dark-tertiary/10 transition-all ease-in text-brand-light border-brand-green-light min-w-[375px] max-w-[375px]">
         {data.header && (
           <div className="border-b border-brand-green-light bg-brand-green-light font-medium text-sm text-dark-main py-1 text-center">
             {data.header}

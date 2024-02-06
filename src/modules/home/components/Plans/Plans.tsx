@@ -1,11 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import { Tab } from "@/shared/components/molecules"
 import { Carousel } from "@/shared/components/organisms/Carousel/Carousel"
 
 import { carersPlans } from "./data"
+import { IPlan } from "@/shared/components/molecules/cards/Plan/types"
 
 interface PlansProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -22,9 +23,13 @@ export const Plans: React.FC<PlansProps> = (props: PlansProps) => {
   ]
   const [activeCarers, setActiveCarers] = useState<string>(carersTabs[0])
   const [activeCourses, setActiveCourses] = useState<string>(coursesTabs[0])
+  const [carers, setCarers] = useState<Array<IPlan>>(
+    carersPlans.filter((item) => item.type.includes(carersTabs[0]))
+  )
 
   function onTabCarerChange(tab: string) {
     setActiveCarers(tab)
+    setCarers(carersPlans.filter((item) => item.type.includes(tab)))
   }
 
   function onTabCourseChange(tab: string) {
@@ -45,7 +50,7 @@ export const Plans: React.FC<PlansProps> = (props: PlansProps) => {
         </h3>
         <span className="uppercase text-2xl">Carreiras</span>
         <Tab tabs={carersTabs} onTabChange={onTabCarerChange} />
-        <Carousel data={carersPlans} />
+        <Carousel data={carers} />
         <span className="uppercase text-2xl mt-[90px] block">Cursos</span>
         <Tab tabs={coursesTabs} onTabChange={onTabCourseChange} />
         {/* <Carousel /> */}
