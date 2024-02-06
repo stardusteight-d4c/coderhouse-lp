@@ -1,0 +1,39 @@
+import { Collapsible } from "./components"
+
+interface CertificateProps extends React.HTMLAttributes<HTMLDivElement> {}
+
+export const Certificate: React.FC<CertificateProps> = (
+  props: CertificateProps
+) => {
+  const data = [
+    {
+      title: "Conteúdo certificado por empresas",
+      about: `O conteúdo dos nossos cursos e carreiras é certificado pelas empresas de tecnologia mais inovadoras do mundo.`,
+    },
+    {
+      title: "Desafios",
+      about: `Durante o curso, você terá desafios para poder aplicar de forma prática o que aprendeu na aula.`,
+    },
+    {
+      title: "Certificado",
+      about: `Ao final de cada curso ou carreira, você vai receber um certificado da Coderhouse para compartilhar em suas redes sociais.`,
+    },
+  ]
+
+  return (
+    <section className="max-w-7xl py-[132px] w-full mx-auto items-center grid gap-x-[100px] grid-cols-2">
+      <div className="col-span-1 text-brand-light">
+        <Collapsible data={data} />
+      </div>
+      <div className="col-span-1">
+        <video
+          src="/assets/mp4/certificate.mp4"
+          autoPlay
+          loop
+          muted
+          className="rounded-xl shadow-sm shadow-black/10 overflow-hidden"
+        />
+      </div>
+    </section>
+  )
+}

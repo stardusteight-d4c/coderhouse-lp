@@ -3,6 +3,7 @@ import { Hero } from "./Hero"
 import { CertifyingCompanies } from "./CertifyingCompanies"
 import { Showcase } from "./Showcase"
 import { Colleagues } from "./Colleagues"
+import { Certificate } from "./Certificate"
 
 export const Home = {
   MegaSaleAds,
@@ -11,4 +12,5 @@ export const Home = {
   CertifyingCompanies,
   Showcase,
   Colleagues,
+  Certificate,
 }
