@@ -31,7 +31,7 @@ export const MegaSaleAds: React.FC<MegaSaleAdsProps> = ({
       </div>
       <div
         onClick={handleClose}
-        className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer"
+        className="absolute right-8 top-1/2 -translate-y-1/2 cursor-pointer"
       >
         <X color="#1A1A1A" />
       </div>

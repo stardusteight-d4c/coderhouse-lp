@@ -34,6 +34,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
                     <CountUp
                       start={0}
                       end={280000}
+                      enableScrollSpy
                       scrollSpyOnce
                       separator="."
                     />
@@ -48,6 +49,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
                     <CountUp
                       start={0}
                       end={90}
+                      enableScrollSpy
                       scrollSpyOnce
                       duration={3}
                       separator="."
@@ -64,6 +66,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
                     <CountUp
                       start={0}
                       end={50}
+                      enableScrollSpy
                       scrollSpyOnce
                       duration={3}
                       separator="."
