@@ -10,6 +10,7 @@ import { Plans } from "./Plans"
 import { Feedbacks } from "./Feedbacks"
 import { WorldGlobe } from "./WorldGlobe"
 import { Media } from "./Media"
+import { MobileApp } from "./MobileApp"
 
 export const Home = {
   MegaSaleAds,
@@ -25,4 +26,5 @@ export const Home = {
   Feedbacks,
   WorldGlobe,
   Media,
+  MobileApp,
 }
