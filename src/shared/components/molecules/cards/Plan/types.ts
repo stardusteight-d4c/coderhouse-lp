@@ -1,10 +1,11 @@
 export interface IPlan {
   header?: string
-  type: Array<string>
   off?: string
-  title: string
+  tag?: string
   courses?: Array<string>
   standardPlan?: string
+  type: Array<string>
+  title: string
   workload: string
   totalPrice: string
   monthlyPrice: string

@@ -7,9 +7,17 @@ interface PlanProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
+  function handleHeight() {
+    if (data.courses) {
+      return "min-h-[620px] max-h-[620px] h-[620px]"
+    } else {
+      return "min-h-[520px] max-h-[520px] h-[520px]"
+    }
+  }
+
   return (
-    <div className="h-[625px] relative">
-      <div className="border h-full rounded-sm min-h-[620px] max-h-[620px] hover:bg-dark-tertiary/10 transition-all ease-in text-brand-light border-brand-green-light min-w-[375px] max-w-[375px]">
+    <div className={"relative " + handleHeight()}>
+      <div className={"border h-full rounded-sm hover:bg-dark-tertiary/10 transition-all ease-in text-brand-light border-brand-green-light min-w-[375px] max-w-[375px] " + handleHeight()}>
         {data.header && (
           <div className="border-b border-brand-green-light bg-brand-green-light font-medium text-sm text-dark-main py-1 text-center">
             {data.header}
@@ -31,7 +39,7 @@ export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
                     Inclui {data.courses.length}{" "}
                     {data.courses.length === 1 ? "curso" : "cursos"}
                   </span>
-                  <div className="my-3 flex flex-col text-sm">
+                  <div className="mt-3 flex flex-col text-sm">
                     {data.courses.map((course, index) => (
                       <span key={index} className="text-dark-low block">
                         • {course}
@@ -41,8 +49,13 @@ export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
                 </>
               )}
               {data.workload && (
-                <span className="text-dark-low flex items-center gap-x-1 text-sm">
+                <span className="text-dark-low mt-3 flex items-center gap-x-1 text-sm">
                   <Clock color="#BEBEBE" /> {data.workload}
+                </span>
+              )}
+              {data.tag && (
+                <span className="block w-fit mt-4 rounded-sm font-medium bg-brand-green-light text-dark-main px-2 py-1">
+                  {data.tag}
                 </span>
               )}
               <div className="absolute bottom-[70px] inset-x-9">
@@ -64,7 +77,7 @@ export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
                   </span>
                 </div>
                 <button className="py-4 font-medium rounded-sm hover:bg-brand-green-light hover:text-dark-main transition-all ease-in w-full mt-5 text-brand-green-light border border-brand-green-light">
-                  Ver carreira
+                  {data.courses ? "Ver carreira" : "Ver curso"}
                 </button>
               </div>
             </div>

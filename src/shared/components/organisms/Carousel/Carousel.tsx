@@ -22,7 +22,7 @@ export const Carousel: React.FC<CarouselProps> = ({ data }: CarouselProps) => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="text-brand-green-main" />
+      <CarouselPrevious />
       <CarouselNext />
     </CarouselRoot>
   )
