@@ -7,17 +7,30 @@ interface PlanProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
-  function handleHeight() {
-    if (data.courses) {
-      return "min-h-[620px] max-h-[620px] h-[620px]"
+  function handleHeight(container?: boolean) {
+    if (container) {
+      if (data.courses) {
+        return "min-h-[630px] max-h-[630px] h-[630px]"
+      } else {
+        return "min-h-[530px] max-h-[530px] h-[530px]"
+      }
     } else {
-      return "min-h-[520px] max-h-[520px] h-[520px]"
+      if (data.courses) {
+        return "min-h-[620px] max-h-[620px] h-[620px]"
+      } else {
+        return "min-h-[520px] max-h-[520px] h-[520px]"
+      }
     }
   }
 
   return (
-    <div className={"relative " + handleHeight()}>
-      <div className={"border h-full rounded-sm hover:bg-dark-tertiary/10 transition-all ease-in text-brand-light border-brand-green-light min-w-[375px] max-w-[375px] " + handleHeight()}>
+    <div className={"relative " + handleHeight(true)}>
+      <div
+        className={
+          "border border-b-[4px] border-r-[4px] shadow-box h-full hover:bg-dark-tertiary/10 transition-all ease-in text-brand-light border-brand-green-light min-w-[375px] max-w-[375px] " +
+          handleHeight()
+        }
+      >
         {data.header && (
           <div className="border-b border-brand-green-light bg-brand-green-light font-medium text-sm text-dark-main py-1 text-center">
             {data.header}
@@ -27,7 +40,7 @@ export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
           {data.off && (
             <div className="py-2 absolute top-4 -right-[10px] bg-dark-main w-fit px-4 border border-brand-light rounded-sm">
               {data.off} 🔥
-              <Triangle className="absolute top-full -right-[1px]" />
+              <Triangle className="absolute text-dark-main top-full -right-[1px]" />
             </div>
           )}
           <div>
