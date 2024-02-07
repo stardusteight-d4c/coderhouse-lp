@@ -15,6 +15,7 @@ export const HomeModule = () => {
       <Home.Plans />
       <Home.Feedbacks />
       <Home.WorldGlobe />
+      <Home.Media />
     </main>
   )
 }

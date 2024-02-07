@@ -6,7 +6,6 @@ import {
   CarouselPrevious,
 } from "@/shared/components/molecules/Carousel"
 import { Plan } from "@/shared/components/molecules/cards"
-import { IPlan } from "@/shared/components/molecules/cards/Plan/types"
 
 interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
   data: Array<IPlan>
