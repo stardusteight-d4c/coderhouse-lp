@@ -13,6 +13,7 @@ export const HomeModule = () => {
       <Home.Opportunities />
       <Home.CoderBolsa />
       <Home.Plans />
+      <Home.Feedbacks />
     </main>
   )
 }
