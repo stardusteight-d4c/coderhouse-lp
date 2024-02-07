@@ -17,6 +17,7 @@ export const HomeModule = () => {
       <Home.WorldGlobe />
       <Home.Media />
       <Home.MobileApp />
+      <Home.Faq />
     </main>
   )
 }
