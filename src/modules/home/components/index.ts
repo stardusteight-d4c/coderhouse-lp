@@ -12,6 +12,7 @@ import { WorldGlobe } from "./WorldGlobe"
 import { Media } from "./Media"
 import { MobileApp } from "./MobileApp"
 import { Faq } from "./Faq"
+import { Footer } from "./Footer"
 
 export const Home = {
   MegaSaleAds,
@@ -29,4 +30,5 @@ export const Home = {
   Media,
   MobileApp,
   Faq,
+  Footer,
 }

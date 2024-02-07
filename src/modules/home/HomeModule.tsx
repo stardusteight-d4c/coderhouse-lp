@@ -18,6 +18,7 @@ export const HomeModule = () => {
       <Home.Media />
       <Home.MobileApp />
       <Home.Faq />
+      <Home.Footer />
     </main>
   )
 }
