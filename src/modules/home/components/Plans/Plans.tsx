@@ -6,7 +6,6 @@ import { Tab } from "@/shared/components/molecules"
 import { Carousel } from "@/shared/components/organisms/Carousel/Carousel"
 
 import { carersPlans, coursesPlans } from "./data"
-import { IPlan } from "@/shared/components/molecules/cards/Plan/types"
 
 interface PlansProps extends React.HTMLAttributes<HTMLDivElement> {}
 

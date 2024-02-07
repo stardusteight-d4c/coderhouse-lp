@@ -7,6 +7,7 @@ import { Certificate } from "./Certificate"
 import { Opportunities } from "./Opportunities"
 import { CoderBolsa } from "./CoderBolsa"
 import { Plans } from "./Plans"
+import { Feedbacks } from "./Feedbacks"
 
 export const Home = {
   MegaSaleAds,
@@ -19,4 +20,5 @@ export const Home = {
   Opportunities,
   CoderBolsa,
   Plans,
+  Feedbacks,
 }

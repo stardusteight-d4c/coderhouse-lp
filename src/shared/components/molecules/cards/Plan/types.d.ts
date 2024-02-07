@@ -1,4 +1,4 @@
-export interface IPlan {
+interface IPlan {
   header?: string
   off?: string
   tag?: string

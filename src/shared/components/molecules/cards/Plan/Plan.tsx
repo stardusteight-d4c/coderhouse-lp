@@ -1,6 +1,5 @@
 import { Clock, Triangle } from "@/shared/components/atoms/icons"
 import React from "react"
-import { IPlan } from "./types"
 
 interface PlanProps extends React.HTMLAttributes<HTMLDivElement> {
   data: IPlan

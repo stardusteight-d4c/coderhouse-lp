@@ -1,5 +1,3 @@
-import { IPlan } from "@/shared/components/molecules/cards/Plan/types"
-
 export const carersPlans: Array<IPlan> = [
   {
     header: "Aproveite a Coderbolsa de 70%",
