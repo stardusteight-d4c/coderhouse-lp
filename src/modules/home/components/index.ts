@@ -8,6 +8,7 @@ import { Opportunities } from "./Opportunities"
 import { CoderBolsa } from "./CoderBolsa"
 import { Plans } from "./Plans"
 import { Feedbacks } from "./Feedbacks"
+import { WorldGlobe } from "./WorldGlobe"
 
 export const Home = {
   MegaSaleAds,
@@ -21,4 +22,5 @@ export const Home = {
   CoderBolsa,
   Plans,
   Feedbacks,
+  WorldGlobe,
 }
