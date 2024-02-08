@@ -83,12 +83,12 @@ export const Collapsible: React.FC<CollapsibleProps> = ({
       return (
         <div
           style={handleCircleAnimation(title)}
-          className="bg-dark-main absolute max-w-[32px] rounded-full z-[1] max-h-[32px]"
+          className="bg-dark-main absolute max-w-[32px] rounded-full z-[60] max-h-[32px]"
         />
       )
     }
   }
-  
+
   function handleCircleAnimation(title: string) {
     if (active === title) {
       return {
@@ -123,18 +123,18 @@ export const Collapsible: React.FC<CollapsibleProps> = ({
         <div key={index} className="h-full relative pb-[59px]">
           <div
             className={
-              "w-[2px] absolute left-[7px] " +
+              "w-[2px] absolute left-[7px] z-[0] " +
               handleConnect({ index, title: item.title })
             }
           />
           <h3
             onClick={() => handleActiveItem(item.title)}
             className={
-              "flex items-center group gap-x-16 cursor-pointer text-3xl leading-[36px] font-medium " +
+              "flex items-center group gap-x-8 md:gap-x-16 cursor-pointer text-2xl lg:text-3xl font-medium " +
               handleTitleColor(item.title)
             }
           >
-            <div className="relative flex items-center justify-center ">
+            <div className="relative flex items-center justify-center">
               <div
                 className={
                   "rounded-full max-w-[16px] max-h-[16px] min-w-[16px] min-h-[16px] w-4 h-4 z-[100] bg-brand-green-light " +
@@ -142,18 +142,19 @@ export const Collapsible: React.FC<CollapsibleProps> = ({
                 }
               />
               <style>{keyframes}</style>
+              {index === 0 && (
+                <div className="bg-dark-main absolute -mt-[18px] w-[32px] z-50 h-[32px]" />
+              )}
               {renderCircleRing(item.title)}
             </div>
             {item.title}
           </h3>
           <div
             style={handleCollapsibleAnimation(item.title)}
-            className="flex items-center gap-x-16"
+            className="flex items-center  gap-x-8 md:gap-x-16"
           >
             <div className="max-w-[16px] min-w-[16px]" />
-            <span className="text-dark-low block pt-[46px] px-4">
-              {item.about}
-            </span>
+            <span className="text-dark-low block pt-[46px]">{item.about}</span>
           </div>
         </div>
       ))}

@@ -21,7 +21,7 @@ export const Certificate: React.FC<CertificateProps> = (
   ]
 
   return (
-    <section className="max-w-7xl py-[132px] w-full mx-auto items-center grid gap-x-[100px] grid-cols-2">
+    <section className="max-w-7xl px-3 xl:px-0 py-[50px] md:py-[132px] w-full mx-auto items-center grid gap-x-[100px] grid-cols-1  md:grid-cols-2">
       <div className="col-span-1 text-brand-light">
         <Collapsible data={data} />
       </div>
@@ -31,7 +31,7 @@ export const Certificate: React.FC<CertificateProps> = (
           autoPlay
           loop
           muted
-          className="rounded-sm overflow-hidden"
+          className="rounded-sm w-full overflow-hidden"
         />
       </div>
     </section>
