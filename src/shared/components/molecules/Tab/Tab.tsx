@@ -26,7 +26,7 @@ export const Tab: React.FC<TabProps> = ({ tabs, onTabChange }: TabProps) => {
   }
 
   return (
-    <div className="flex items-center gap-x-3 mb-10 mt-11">
+    <div className="flex items-center flex-wrap gap-3 mb-10 mt-11">
       {tabs.map((tab, index) => (
         <div
           key={index}

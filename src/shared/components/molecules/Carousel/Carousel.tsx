@@ -208,7 +208,7 @@ const CarouselPrevious = React.forwardRef<
       className={cn(
         "absolute h-8 w-8 rounded-full !border-none !brightness-100 !opacity-100 disabled:!bg-dark-low disabled:!cursor-pointer disabled:!pointer-events-auto !bg-brand-green-main",
         orientation === "horizontal"
-          ? "-left-[16px] cursor-pointer z-50 top-1/2 -translate-y-1/2"
+          ? "-left-[10px] md:-left-[16px] cursor-pointer z-50 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -237,7 +237,7 @@ const CarouselNext = React.forwardRef<
       className={cn(
         "absolute h-8 w-8 rounded-full !border-none !brightness-100 !opacity-100 disabled:!bg-dark-low disabled:!cursor-pointer disabled:!pointer-events-auto !bg-brand-green-main",
         orientation === "horizontal"
-          ? "-right-[18px] top-1/2 -translate-y-1/2"
+          ? "-right-[12px] md:-right-[18px] top-1/2 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}

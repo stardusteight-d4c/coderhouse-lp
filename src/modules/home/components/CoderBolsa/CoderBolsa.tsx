@@ -10,7 +10,9 @@ export const CoderBolsa: React.FC<CoderBolsaProps> = (
     <section className="max-w-7xl px-3 xl:px-0 w-full mx-auto">
       <div className="w-full rounded-sm px-3 md:px-6 lg:px-16 gap-y-[50px] gap-x-[100px] py-[56px] text-dark-main bg-gradient-to-br from-brand-green-light to-brand-green-main flex flex-col lg:grid grid-cols-2 items-center">
         <div className="col-span-1">
-          <h3 className="text-5xl lg:text-7xl font-bold mb-5 tracking-[-1.8px]">O que é a CoderBolsa?</h3>
+          <h3 className="text-5xl lg:text-7xl font-bold mb-5 tracking-[-1.8px]">
+            O que é a CoderBolsa?
+          </h3>
           <p className="text-xl">
             Nossa missão é democratizar a educação de qualidade na América
             Latina. E como forma de tornar isso real, criamos a CoderBolsa, uma
@@ -38,7 +40,7 @@ export const CoderBolsa: React.FC<CoderBolsaProps> = (
           </div>
         </div>
       </div>
-      <Divider className="my-[132px] col-span-2" />
+      <Divider className="my-[50px] md:my-[132px] col-span-2" />
     </section>
   )
 }

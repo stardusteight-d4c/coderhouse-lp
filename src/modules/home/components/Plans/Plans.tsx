@@ -36,21 +36,23 @@ export const Plans: React.FC<PlansProps> = (props: PlansProps) => {
   }
 
   return (
-    <section className="w-screen overflow-hidden">
+    <section className="w-screen px-3 xl:px-0 overflow-hidden">
       <div className="max-w-7xl text-brand-light mx-auto w-full">
-        <span className="flex items-center gap-x-4 w-fit text-2xl">
+        <span className="flex items-center gap-x-4 w-fit text-xl md:text-2xl">
           <div className="flex relative items-center justify-center rounded-full bg-red-600 w-[16px] h-[16px]">
             <div className="absolute animate-ping flex items-center justify-center rounded-full bg-red-600 w-[16px] h-[16px]" />
           </div>
           Online e ao vivo
         </span>
-        <h3 className="text-6xl leading-[70px] font-bold tracking-[-1.8px] my-10">
+        <h3 className="text-4xl lg:text-6xl font-bold tracking-[-1.8px] my-4 md:my-10">
           Escolha seu curso ou carreira
         </h3>
-        <span className="uppercase text-2xl">Carreiras</span>
+        <span className="uppercase text-xl md:text-2xl">Carreiras</span>
         <Tab tabs={carersTabs} onTabChange={onTabCarerChange} />
         <Carousel data={carers} />
-        <span className="uppercase text-2xl mt-[90px] block">Cursos</span>
+        <span className="uppercase text-xl md:text-2xl mt-16 md:mt-[90px] block">
+          Cursos
+        </span>
         <Tab tabs={coursesTabs} onTabChange={onTabCourseChange} />
         <Carousel data={courses} />
       </div>

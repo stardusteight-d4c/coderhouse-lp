@@ -26,7 +26,7 @@ export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
     <div className={"relative " + handleHeight(true)}>
       <div
         className={
-          "border border-b-[4px] border-r-[4px] shadow-box h-full hover:bg-dark-tertiary/10 transition-all ease-in text-brand-light border-brand-green-light min-w-[375px] max-w-[375px] " +
+          "border border-b-[4px] border-r-[4px] shadow-box h-full hover:bg-dark-tertiary/10 transition-all ease-in text-brand-light border-brand-green-light w-[90%] md:min-w-[375px] md:max-w-[375px] " +
           handleHeight()
         }
       >
@@ -35,7 +35,7 @@ export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
             {data.header}
           </div>
         )}
-        <div className="px-9 relative pt-14 pb-10 h-full">
+        <div className="px-4 md:px-9 relative pt-14 pb-10 h-full">
           {data.off && (
             <div className="py-2 absolute top-4 -right-[10px] bg-dark-main w-fit px-4 border border-brand-light rounded-sm">
               {data.off} 🔥
@@ -70,7 +70,7 @@ export const Plan: React.FC<PlanProps> = ({ data }: PlanProps) => {
                   {data.tag}
                 </span>
               )}
-              <div className="absolute bottom-[70px] inset-x-9">
+              <div className="absolute bottom-[70px] inset-x-4 md:inset-x-9">
                 <div className="text-dark-low">
                   {data.off && (
                     <div className="text-xs gap-x-1 flex items-center">
