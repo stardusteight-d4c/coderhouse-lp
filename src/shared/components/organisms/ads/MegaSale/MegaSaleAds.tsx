@@ -24,14 +24,14 @@ export const MegaSaleAds: React.FC<MegaSaleAdsProps> = ({
       className="bg-brand-green-light text-[15.38px] leading-[24px] relative"
       {...props}
     >
-      <div>
-        💸 <strong>Mega Sale</strong> 💸 Aproveite <strong>70% OFF</strong> em{" "}
+      <div className="text-start px-3 xl:px-0 text-xs lg:text-base lg:text-center">
+         <strong className="hidden lg:inline-block">💸 Mega Sale 💸</strong> Aproveite <strong>70% OFF</strong> em{" "}
         <strong>TODOS</strong> os nossos Cursos e Carreiras.
         <strong> Em até 12x sem juros | Até 05/02</strong> 🚀
       </div>
       <div
         onClick={handleClose}
-        className="absolute right-8 top-1/2 -translate-y-1/2 cursor-pointer"
+        className="absolute hidden md:block right-8 top-1/2 -translate-y-1/2 cursor-pointer"
       >
         <X color="#1A1A1A" />
       </div>

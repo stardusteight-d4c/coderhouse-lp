@@ -32,7 +32,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
     return (
       <div
         onMouseLeave={() => handleSelectCategory(data[0])}
-        className="absolute z-[800] hidden w-[400px] group-hover:block top-full pt-[34px]"
+        className="absolute z-[800] hidden w-[400px] group-hover:block top-full pt-[33px]"
       >
         <div className="bg-[#262626] h-[500px] rounded-sm p-6">
           <h3 className="text-xl flex items-center border-b border-b-dark-secondary pb-3 gap-x-2 mb-4">
@@ -90,9 +90,12 @@ export const Dropdown: React.FC<DropdownProps> = ({
             {selectedCategory.items.map((item, index) => (
               <li
                 key={index}
-                className="py-2 cursor-pointer hover:underline text-dark-tertiary hover:text-brand-green-main"
+                className="py-2 flex items-center gap-x-2 cursor-pointer hover:underline text-dark-tertiary hover:text-brand-green-main"
               >
-                {item.name}
+                {item.name}{" "}
+                {item.new && (
+                  <div className="px-2 w-fit rounded-sm bg-brand-green-main text-dark-main">Novo</div>
+                )}
               </li>
             ))}
           </ul>
