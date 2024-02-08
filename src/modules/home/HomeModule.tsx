@@ -3,9 +3,9 @@ import { Home } from "./components"
 export const HomeModule = () => {
   return (
     <main className="min-h-screen bg-dark-main overflow-x-hidden w-full max-w-screen">
-      <Home.MegaSaleAds />
+      {/* <Home.MegaSaleAds /> */}
       <Home.Navbar />
-      <Home.Hero />
+      {/* <Home.Hero />
       <Home.CertifyingCompanies />
       <Home.Showcase />
       <Home.Colleagues />
@@ -18,7 +18,7 @@ export const HomeModule = () => {
       <Home.Media />
       <Home.MobileApp />
       <Home.Faq />
-      <Home.Footer />
+      <Home.Footer /> */}
     </main>
   )
 }
