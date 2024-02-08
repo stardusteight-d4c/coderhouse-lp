@@ -6,10 +6,10 @@ interface FeedbackProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export const Feedback: React.FC<FeedbackProps> = ({ data }: FeedbackProps) => {
   return (
-    <div className="col-span-1 relative flex items-start gap-x-4 w-fit rounded-sm bg-dark-tertiary/10 p-11 !pt-14">
+    <div className="col-span-1 relative flex items-start gap-x-4 w-fit rounded-sm bg-dark-tertiary/10 px-4 pb-11 lg:p-11 !pt-14">
       <Quote className="-mt-4" />
       <div>
-        <p className="text-dark-low mb-9">{data.feedback}</p>
+        <p className="text-dark-low mb-2 lg:mb-9">{data.feedback}</p>
         <div className="flex items-center gap-x-4">
           <img
             src={data.avatarUrl}
@@ -21,7 +21,7 @@ export const Feedback: React.FC<FeedbackProps> = ({ data }: FeedbackProps) => {
             <span className="text-dark-low text-xs">{data.label}</span>
           </div>
         </div>
-        <span className="block ml-auto cursor-pointer hover:underline w-fit text-brand-green-light">
+        <span className="block mt-2 lg:mt-0 lg:ml-auto cursor-pointer hover:underline w-fit text-brand-green-light">
           Ver LinkedIn
         </span>
       </div>
