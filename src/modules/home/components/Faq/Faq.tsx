@@ -38,17 +38,17 @@ export const Faq: React.FC<FaqProps> = (props: FaqProps) => {
   }
 
   return (
-    <section className="max-w-7xl pb-[125px] text-brand-light w-full mx-auto">
-      <h5 className="text-6xl font-bold tracking-[-1.8px] mb-14">
+    <section className="max-w-7xl px-3 xl:px-0 pb-[125px] text-brand-light w-full mx-auto">
+      <h5 className="text-4xl md:text-6xl font-bold tracking-[-1.8px] mb-14">
         Perguntas frequentes
       </h5>
-      <div className="w-[930px]">
+      <div className="lg:w-[930px]">
         {faqItems.map((item, index) => (
           <div key={index} className="border-b-2 border-b-dark-secondary">
             <h3
               onClick={() => handleActiveFaq(index)}
               className={
-                "text-3xl py-5 flex cursor-pointer items-center justify-between " +
+                "text-xl md:text-3xl py-4 md:py-5 flex cursor-pointer items-center justify-between " +
                 handleSelectTitleColor(index)
               }
             >
@@ -61,7 +61,7 @@ export const Faq: React.FC<FaqProps> = (props: FaqProps) => {
             </h3>
             {activeFaq === index && (
               <Fade duration={800}>
-                <div className="text-dark-low text-xl pb-5">
+                <div className="text-dark-low  text-xl pb-5">
                   <div dangerouslySetInnerHTML={{ __html: item.awser }} />
                 </div>
               </Fade>
