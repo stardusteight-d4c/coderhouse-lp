@@ -28,3 +28,13 @@ html {
   background: linear-gradient(45deg, #D1E500 0%, #F4FF80 100%);
   border-radius: 20px;
 }
+
+.mirror {
+  transform: rotateX(180deg);
+  transition: 800ms;
+}
+
+.no-mirror {
+  transform: rotateX(0);
+  transition: 800ms;
+}

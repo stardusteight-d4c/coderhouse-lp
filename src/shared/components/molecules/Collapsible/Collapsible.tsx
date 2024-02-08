@@ -78,17 +78,6 @@ export const Collapsible: React.FC<CollapsibleProps> = ({
     }
   }
 
-  function handleCircleAnimation(title: string) {
-    if (active === title) {
-      return {
-        width: "0px",
-        height: "0px",
-        border: "2px solid transparent",
-        animation: "grow 300ms forwards",
-      }
-    }
-  }
-
   function renderCircleRing(title: string) {
     if (active === title) {
       return (
@@ -97,6 +86,17 @@ export const Collapsible: React.FC<CollapsibleProps> = ({
           className="bg-dark-main absolute max-w-[32px] rounded-full z-[1] max-h-[32px]"
         />
       )
+    }
+  }
+  
+  function handleCircleAnimation(title: string) {
+    if (active === title) {
+      return {
+        width: "0px",
+        height: "0px",
+        border: "2px solid transparent",
+        animation: "grow 300ms forwards",
+      }
     }
   }
 
