@@ -21,7 +21,7 @@ export const Feedbacks: React.FC<FeedbacksProps> = (props: FeedbacksProps) => {
         </span>
         <span>→</span>
       </div>
-      <Divider className="mt-[80px] mb-[160px]" />
+      <Divider className="mt-[80px] mb-[100px] md:mb-[160px]" />
     </section>
   )
 }

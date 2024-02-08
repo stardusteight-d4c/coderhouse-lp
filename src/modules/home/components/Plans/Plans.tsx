@@ -44,7 +44,7 @@ export const Plans: React.FC<PlansProps> = (props: PlansProps) => {
           </div>
           Online e ao vivo
         </span>
-        <h3 className="text-4xl lg:text-6xl font-bold tracking-[-1.8px] my-4 md:my-10">
+        <h3 className="text-4xl lg:text-6xl font-bold tracking-[-1.8px] mt-4 mb-10 md:my-10">
           Escolha seu curso ou carreira
         </h3>
         <span className="uppercase text-xl md:text-2xl">Carreiras</span>

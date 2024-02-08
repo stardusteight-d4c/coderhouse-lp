@@ -8,8 +8,8 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
   props: WorldGlobeProps
 ) => {
   return (
-    <section className="max-w-7xl mb-[190px] mx-auto w-full text-brand-light">
-      <h3 className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-green-main to-brand-green-light">
+    <section className="max-w-7xl px-3 xl:px-0 mb-[100px] md:mb-[190px] mx-auto w-full text-brand-light">
+      <h3 className="text-4xl md:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-green-main to-brand-green-light">
         Evoluímos <br />
         com você
       </h3>
@@ -26,10 +26,10 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
         />
         <div className="relative bg-dark-main overflow-hidden rounded-full flex items-center justify-center w-fit h-fit">
           <div className="absolute z-[100] inset-0">
-            <div className="pl-[130px] pt-[145px]">
+            <div className="pl-[75px] pt-[55px] xs:pl-[80px] xs:pt-[80px] sm:pl-[125px] sm:pt-[125px] md:pl-[130px] md:pt-[145px]">
               <div className="flex items-start flex-col gap-y-7">
                 <div>
-                  <h6 className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-green-main to-brand-green-light">
+                  <h6 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-green-main to-brand-green-light">
                     +{" "}
                     <CountUp
                       start={0}
@@ -44,7 +44,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
                   </span>
                 </div>
                 <div>
-                  <h6 className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-green-main to-brand-green-light">
+                  <h6 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-green-main to-brand-green-light">
                     +{" "}
                     <CountUp
                       start={0}
@@ -61,7 +61,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
                   </span>
                 </div>
                 <div>
-                  <h6 className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-green-main to-brand-green-light">
+                  <h6 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-green-main to-brand-green-light">
                     +{" "}
                     <CountUp
                       start={0}
@@ -84,7 +84,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
             autoPlay
             loop
             muted
-            className="scale-110 z-50 w-[666px] h-[670px]"
+            className="scale-110 z-50 md:w-[666px] md:h-[670px]"
           />
         </div>
       </div>
