@@ -2,7 +2,7 @@ interface HeroProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const Hero: React.FC<HeroProps> = (props: HeroProps) => {
   return (
-    <section className="max-w-7xl px-3 xl:px-0 mx-auto pb-24 pt-40 text-brand-light flex items-center justify-center flex-col">
+    <section className="max-w-7xl px-3 xl:px-0 mx-auto pb-14 md:pb-24 pt-40 text-brand-light flex items-center justify-center flex-col">
       <div className="w-full max-w-[992px]">
         <h1 className="text-start md:text-center font-bold lg:leading-[70px] -tracking-[-1.8px] text-4xl md:text-6xl">
           Cursos online e ao vivo para{" "}
