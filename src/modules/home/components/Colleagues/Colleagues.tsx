@@ -27,10 +27,10 @@ export const Colleagues: React.FC<ColleaguesProps> = (
               Fórum privado
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl py-4 md:py-0 md:leading-[70px] font-bold">
+          <h2 className="text-4xl md:text-6xl py-4 md:py-0 font-bold">
             Aprenda com seus colegas
           </h2>
-          <p className="text-2xl mt-2 leading-[36px]">
+          <p className="text-base md:text-2xl mt-2">
             A aprendizagem em grupo tem se mostrado mais eficiente e motivadora.
             O networking com colegas ajuda a ter novas ideias e fazer projetos
             melhores.

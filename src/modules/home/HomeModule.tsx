@@ -13,14 +13,14 @@ export const HomeModule = () => {
       <Home.Colleagues />
       <Home.Certificate />
       <Home.Opportunities />
-      <Home.CoderBolsa />
+      {/* <Home.CoderBolsa />
       <Home.Plans />
       <Home.Feedbacks />
       <Home.WorldGlobe />
       <Home.Media />
       <Home.MobileApp />
       <Home.Faq />
-      <Home.Footer />
+      <Home.Footer /> */}
     </main>
   )
 }

@@ -18,18 +18,20 @@ export const Opportunities: React.FC<OpportunitiesProps> = (
   ]
 
   return (
-    <section className="max-w-7xl w-full mx-auto items-center grid gap-x-[100px] grid-cols-2">
-      <div className="col-span-1">
-        <video
-          src="/assets/mp4/opportunities.mp4"
-          autoPlay
-          loop
-          muted
-          className="rounded-sm overflow-hidden"
-        />
-      </div>
-      <div className="col-span-1 text-brand-light">
-        <Collapsible data={data} />
+    <section className="max-w-7xl px-3 xl:px-0 w-full md:mx-auto">
+      <div className="md:items-center flex flex-col-reverse md:grid md:gap-x-[100px] grid-cols-1 md:grid-cols-2">
+        <div className="col-span-1">
+          <video
+            src="/assets/mp4/opportunities.mp4"
+            autoPlay
+            loop
+            muted
+            className="rounded-sm overflow-hidden"
+          />
+        </div>
+        <div className="col-span-1 text-brand-light">
+          <Collapsible data={data} />
+        </div>
       </div>
       <Divider className="my-[132px] col-span-2" />
     </section>
