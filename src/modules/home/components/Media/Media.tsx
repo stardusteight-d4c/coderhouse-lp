@@ -17,9 +17,9 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
   }
 
   return (
-    <section className="max-w-7xl pb-[160px] mx-auto w-full text-brand-light">
+    <section className="max-w-7xl px-3 xl:px-0 pb-[160px] mx-auto w-full text-brand-light">
       <h5 className="text-center text-xl">Nossas aparições na mídia</h5>
-      <div className="rounded-sm relative h-[440.5px] mt-14 grid grid-cols-3 border border-dark-secondary items-center px-[120px] py-[60px]">
+      <div className="rounded-sm relative md:h-[440.5px] mt-14 gap-y-4 gap-x-12 grid md:grid-cols-3 border border-dark-secondary items-center px-4 md:px-[80px] lg:px-[120px] py-[60px]">
         <div className="col-span-1">
           <img
             src={medias[activeItem].logo}
