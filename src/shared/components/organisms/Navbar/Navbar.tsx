@@ -1,13 +1,13 @@
 import { CaretDown, MenuBar } from "@/shared/components/atoms"
 
-import { Dropdown } from "./components"
+import { Dropdown, Menu } from "./components"
 import { carers, courses, forBusinesses } from "./data"
 
 interface NavbarProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
   return (
-    <nav className="bg-dark-main py-7 z-[1000] relative border-b-2 border-dark-secondary text-brand-light w-screen">
+    <nav className="bg-dark-main py-7 z-[500] relative border-b-2 border-dark-secondary text-brand-light w-screen">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <img src="/brand/logo.svg" alt="logo/svg" />
         <ul className="flex items-center gap-x-8">
@@ -39,7 +39,8 @@ export const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
           </li>
         </ul>
         <div className="flex items-center justify-center gap-x-8">
-          Plataforma <MenuBar color="#FFFFFF" />
+          <span className="cursor-pointer">Plataforma</span>
+          <Menu />
         </div>
       </div>
     </nav>

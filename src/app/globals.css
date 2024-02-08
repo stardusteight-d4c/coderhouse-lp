@@ -4,7 +4,7 @@
 
 body,
 html {
-  @apply bg-dark-main;
+  @apply bg-dark-main min-h-screen;
 }
 
 .shadow-box {
@@ -25,7 +25,7 @@ html {
 }
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: linear-gradient(45deg, #D1E500 0%, #F4FF80 100%);
+  background: linear-gradient(45deg, #d1e500 0%, #f4ff80 100%);
   border-radius: 20px;
 }
 

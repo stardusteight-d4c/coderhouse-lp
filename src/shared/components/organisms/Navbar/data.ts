@@ -119,11 +119,11 @@ export const menuItems: Array<{
     items: undefined,
   },
   {
-    category: "Comunidade",
-    items: ["Quem somos", "Imprensa", "Experiências", "Novas parcerias"],
-  },
-  {
     category: "Empresas certificadoras",
     items: undefined,
+  },
+  {
+    category: "Comunidade",
+    items: ["Quem somos", "Imprensa", "Experiências", "Novas parcerias"],
   },
 ]
