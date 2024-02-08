@@ -33,7 +33,7 @@ export const Opportunities: React.FC<OpportunitiesProps> = (
           <Collapsible data={data} />
         </div>
       </div>
-      <Divider className="my-[132px] col-span-2" />
+      <Divider className="my-[100px] md:my-[132px] col-span-2" />
     </section>
   )
 }
