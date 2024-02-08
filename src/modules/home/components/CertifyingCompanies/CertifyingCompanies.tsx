@@ -43,7 +43,7 @@ export const CertifyingCompanies: React.FC<CertifyingCompaniesProps> = (
       <span className="text-brand-green-light w-[300px] text-sm md:text-base cursor-pointer mt-10 block underline md:w-fit mx-auto text-center">
         Conheça mais sobre as empresas que nos certificam
       </span>
-      <Divider className="mt-[48px] mb-[124px]" />
+      <Divider className="mt-[48px] mb-16 md:mb-[124px]" />
     </section>
   )
 }
