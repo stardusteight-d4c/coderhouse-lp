@@ -38,7 +38,7 @@ export const Faq: React.FC<FaqProps> = (props: FaqProps) => {
   }
 
   return (
-    <section className="max-w-7xl px-3 xl:px-0 pb-[125px] text-brand-light w-full mx-auto">
+    <section className="max-w-7xl px-3 xl:px-0 pb-20 md:pb-[125px] text-brand-light w-full mx-auto">
       <h5 className="text-4xl md:text-6xl font-bold tracking-[-1.8px] mb-14">
         Perguntas frequentes
       </h5>
