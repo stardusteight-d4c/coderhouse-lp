@@ -1,7 +1,7 @@
 import { CaretDown, MenuBar } from "@/shared/components/atoms"
 
 import { Dropdown } from "./components"
-import { carers, courses } from "./data"
+import { carers, courses, forBusinesses } from "./data"
 
 interface NavbarProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -12,17 +12,30 @@ export const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
         <img src="/brand/logo.svg" alt="logo/svg" />
         <ul className="flex items-center gap-x-8">
           <li className="flex group justify-center relative cursor-default items-center">
-            Cursos <CaretDown color="#F4FF80" />
+            Cursos{" "}
+            <CaretDown
+              color="#F4FF80"
+              className="group-hover:rotate-180 transition-all"
+            />
             <div className="opacity-0 group-hover:opacity-100 transition absolute left-0 -bottom-[16px] h-0 border-t-2 w-full border-t-brand-green-main" />
-            <Dropdown data={courses} />
+            <Dropdown type="Cursos" data={courses} />
           </li>
           <li className="flex group justify-center relative cursor-default items-center">
-            Carreira <CaretDown color="#F4FF80" />
+            Carreira{" "}
+            <CaretDown
+              color="#F4FF80"
+              className="group-hover:rotate-180 transition-all"
+            />
             <div className="opacity-0 group-hover:opacity-100 transition absolute left-0 -bottom-[16px] h-0 border-t-2 w-full border-t-brand-green-main" />
-            <Dropdown data={carers} />
+            <Dropdown type="Carreiras" data={carers} />
           </li>
-          <li className="flex items-center">
-            Para empresas <CaretDown color="#F4FF80" />
+          <li className="flex group justify-center relative cursor-default items-center">
+            Para empresas{" "}
+            <CaretDown
+              color="#F4FF80"
+              className="group-hover:rotate-180 transition-all"
+            />
+            <Dropdown type="Para empresas" data={forBusinesses} />
           </li>
         </ul>
         <div className="flex items-center justify-center gap-x-8">

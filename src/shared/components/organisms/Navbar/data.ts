@@ -100,7 +100,15 @@ export const carers: Array<INavbarData> = [
   },
 ]
 
-export const forBusinesses = ["Capacitações", "Parcerias"]
+export const forBusinesses: Array<INavbarData> = [
+  {
+    category: "",
+    items: [
+      { name: "Capacitações", new: false },
+      { name: "Parcerias", new: false },
+    ],
+  },
+]
 
 export const menuItems: Array<{
   category: string
