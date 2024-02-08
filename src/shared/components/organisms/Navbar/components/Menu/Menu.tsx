@@ -15,9 +15,11 @@ export const Menu = (props: MenuProps) => {
     setShowMenu(isShow)
   }
 
-  console.log(showMenu)
-
   function renderMenu() {
+    if (typeof document === "undefined") {
+      return null
+    }
+
     return ReactDOM.createPortal(
       <>
         <div
@@ -69,7 +71,7 @@ export const Menu = (props: MenuProps) => {
       <div onClick={() => handleShowMenu(true)}>
         <MenuBar color="#FFFFFF" className="cursor-pointer" />
       </div>
-      {renderMenu()}
+      {showMenu && renderMenu()}
     </div>
   )
 }
