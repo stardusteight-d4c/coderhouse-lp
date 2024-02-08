@@ -1,4 +1,4 @@
-import { CaretDown, MenuBar } from "@/shared/components/atoms"
+import { CaretDown } from "@/shared/components/atoms"
 
 import { Dropdown, Menu } from "./components"
 import { carers, courses, forBusinesses } from "./data"

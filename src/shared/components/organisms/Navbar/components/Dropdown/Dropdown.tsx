@@ -32,7 +32,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
     return (
       <div
         onMouseLeave={() => handleSelectCategory(data[0])}
-        className="absolute hidden w-[400px] group-hover:block top-full pt-[34px]"
+        className="absolute z-[800] hidden w-[400px] group-hover:block top-full pt-[34px]"
       >
         <div className="bg-[#262626] h-[500px] rounded-sm p-6">
           <h3 className="text-xl flex items-center border-b border-b-dark-secondary pb-3 gap-x-2 mb-4">
@@ -57,7 +57,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
   return (
     <div
       onMouseLeave={() => handleSelectCategory(data[0])}
-      className="absolute hidden w-[716px] group-hover:block top-full pt-[34px]"
+      className="absolute z-[800] hidden w-[716px] group-hover:block top-full pt-[33px]"
     >
       <div className="bg-[#262626] h-[500px] rounded-sm p-6 grid grid-cols-2">
         <div className="col-span-1 pr-3 border-r border-r-dark-secondary">
