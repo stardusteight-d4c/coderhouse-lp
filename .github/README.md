@@ -38,6 +38,6 @@ Coderhouse's recreated landing page was designed with a special focus on modern 
 
 In summary, Coderhouse's recreated landing page combines modern design, intuitive usability and interactive dynamics to provide an engaging experience for users, encouraging content exploration and promoting a positive impression of the brand.
 
-![screen](./screenshots/screen-desktop.png)
+![screen](./screenshots/desktop.png)
 
 <p align="center">Project made with :blue_heart: by <a href="https://github.com/stardusteight-d4c">Gabriel Sena</a></p>
