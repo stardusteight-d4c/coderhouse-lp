@@ -18,7 +18,12 @@ export const Carousel: React.FC<CarouselProps> = ({ data }: CarouselProps) => {
   return (
     <CarouselRoot>
       <CarouselContent className="min-w-[400px] max-w-[400px]">
-        <Fade cascade duration={1000}>
+        <Fade
+          key={data.toString()}
+          cascade
+          duration={500}
+          className="min-w-[400px] max-w-[400px]"
+        >
           {data.map((item, index) => (
             <CarouselItem key={index}>
               <Plan data={item} />
