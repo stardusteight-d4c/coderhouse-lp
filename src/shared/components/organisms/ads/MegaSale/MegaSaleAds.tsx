@@ -21,7 +21,7 @@ export const MegaSaleAds: React.FC<MegaSaleAdsProps> = ({
 
   return (
     <Ads
-      className="bg-brand-green-light text-[15.38px] leading-[24px] relative"
+      className="bg-brand-green-light hidden md:block text-[15.38px] leading-[24px] relative"
       {...props}
     >
       <div className="text-start px-3 xl:px-0 text-xs lg:text-base lg:text-center">
