@@ -1,3 +1,7 @@
+"use client"
+
+import { Fade } from "react-awesome-reveal"
+
 interface MobileAppProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const MobileApp: React.FC<MobileAppProps> = (props: MobileAppProps) => {
@@ -24,7 +28,9 @@ export const MobileApp: React.FC<MobileAppProps> = (props: MobileAppProps) => {
         </div>
         <div className="col-span-1 hidden lg:block relative">
           <div className="top-0 -mt-40 absolute w-[704px] h-[716px]">
-            <img src="/assets/mobile.webp" alt="mobile-app/webp" />
+            <Fade duration={1000}>
+              <img src="/assets/mobile.webp" alt="mobile-app/webp" />
+            </Fade>
           </div>
         </div>
       </div>

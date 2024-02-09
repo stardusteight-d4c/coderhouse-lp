@@ -1,5 +1,6 @@
 "use client"
 
+import { Rotate } from "react-awesome-reveal"
 import CountUp from "react-countup"
 
 interface WorldGlobeProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -79,13 +80,15 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
               </div>
             </div>
           </div>
-          <video
-            src="/assets/mp4/world-globe.mp4"
-            autoPlay
-            loop
-            muted
-            className="scale-110 z-50 md:w-[666px] md:h-[670px]"
-          />
+          <Rotate duration={1000} delay={200}>
+            <video
+              src="/assets/mp4/world-globe.mp4"
+              autoPlay
+              loop
+              muted
+              className="scale-110 z-50 md:w-[666px] md:h-[670px]"
+            />
+          </Rotate>
         </div>
       </div>
     </section>

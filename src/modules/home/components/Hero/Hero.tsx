@@ -1,3 +1,7 @@
+"use client"
+
+import { Slide } from "react-awesome-reveal"
+
 interface HeroProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const Hero: React.FC<HeroProps> = (props: HeroProps) => {
@@ -6,9 +10,11 @@ export const Hero: React.FC<HeroProps> = (props: HeroProps) => {
       <div className="w-full max-w-[992px]">
         <h1 className="text-start md:text-center font-bold lg:leading-[70px] -tracking-[-1.8px] text-4xl md:text-6xl">
           Cursos online e ao vivo para{" "}
-          <span className="bg-brand-green-light font-bold text-dark-main">
-            transformar sua realidade
-          </span>{" "}
+          <Slide direction="left" className="inline-block">
+            <span className="bg-brand-green-light font-bold text-dark-main">
+              transformar sua realidade
+            </span>
+          </Slide>{" "}
           em tempo recorde
         </h1>
         <span className="mt-6 mb-9 md:mb-16 block w-full max-w-[776px] text-start md:mx-auto md:text-center">

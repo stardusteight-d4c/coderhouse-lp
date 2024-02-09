@@ -1,15 +1,21 @@
+"use client"
+
+import { Zoom } from "react-awesome-reveal"
+
 interface ShowcaseProps extends React.HTMLAttributes<HTMLVideoElement> {}
 
 export const Showcase: React.FC<ShowcaseProps> = (props: ShowcaseProps) => {
   return (
     <section className="max-w-7xl px-3 xl:px-0 mx-auto text-dark-main w-full">
-      <video
-        src="/assets/mp4/showcase.mp4"
-        autoPlay
-        loop
-        muted
-        className="max-w-[992px] rounded-xl overflow-hidden max-h-[640px] mb-16 md:mb-[124px] mx-auto w-full h-full"
-      />
+      <Zoom>
+        <video
+          src="/assets/mp4/showcase.mp4"
+          autoPlay
+          loop
+          muted
+          className="max-w-[992px] rounded-xl overflow-hidden max-h-[640px] mb-16 md:mb-[124px] mx-auto w-full h-full"
+        />
+      </Zoom>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
         <div className="col-span-1 md:row-span-1 md:col-start-1 w-full rounded-sm py-9 px-4 lg:px-8 bg-brand-green-light">
           <h3 className="text-4xl lg:text-5xl tracking-[-1.8px] font-bold">
