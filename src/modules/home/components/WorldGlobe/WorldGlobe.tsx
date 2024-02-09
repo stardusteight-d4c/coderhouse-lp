@@ -80,14 +80,18 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
               </div>
             </div>
           </div>
-          <Rotate duration={1000} delay={200}>
+          <Rotate
+            duration={1000}
+            delay={200}
+            className="scale-110 rounded-full z-50 md:w-[666px] md:h-[670px]"
+          >
             <video
               src="/assets/mp4/world-globe.mp4"
               autoPlay
               loop
               playsInline
               muted
-              className="scale-110 z-50 md:w-[666px] md:h-[670px]"
+              className="scale-110 rounded-full z-50 md:w-[666px] md:h-[670px]"
             />
           </Rotate>
         </div>
