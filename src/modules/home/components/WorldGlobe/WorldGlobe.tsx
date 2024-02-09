@@ -83,7 +83,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
           <Rotate
             duration={1000}
             delay={200}
-            className="scale-110 rounded-full z-50 md:w-[666px] md:h-[670px]"
+            className="rounded-full z-50 md:w-[666px] md:h-[670px]"
           >
             <video
               src="/assets/mp4/world-globe.mp4"
