@@ -85,6 +85,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
               src="/assets/mp4/world-globe.mp4"
               autoPlay
               loop
+              playsInline
               muted
               className="scale-110 z-50 md:w-[666px] md:h-[670px]"
             />

@@ -11,6 +11,7 @@ export const Colleagues: React.FC<ColleaguesProps> = (
             src="/assets/mp4/colleagues.mp4"
             autoPlay
             loop
+            playsInline
             muted
             className="rounded-sm overflow-hidden"
           />

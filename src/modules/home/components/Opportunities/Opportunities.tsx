@@ -25,6 +25,7 @@ export const Opportunities: React.FC<OpportunitiesProps> = (
             src="/assets/mp4/opportunities.mp4"
             autoPlay
             loop
+            playsInline
             muted
             className="rounded-sm overflow-hidden"
           />

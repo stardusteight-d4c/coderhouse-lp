@@ -30,6 +30,7 @@ export const Certificate: React.FC<CertificateProps> = (
           src="/assets/mp4/certificate.mp4"
           autoPlay
           loop
+          playsInline
           muted
           className="rounded-sm w-full overflow-hidden"
         />

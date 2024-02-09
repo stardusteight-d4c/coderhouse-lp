@@ -12,6 +12,7 @@ export const Showcase: React.FC<ShowcaseProps> = (props: ShowcaseProps) => {
           src="/assets/mp4/showcase.mp4"
           autoPlay
           loop
+          playsInline
           muted
           className="max-w-[992px] rounded-xl overflow-hidden max-h-[640px] mb-16 md:mb-[124px] mx-auto w-full h-full"
         />
@@ -57,6 +58,7 @@ export const Showcase: React.FC<ShowcaseProps> = (props: ShowcaseProps) => {
               src="/assets/mp4/professors.mp4"
               autoPlay
               loop
+              playsInline
               muted
               className="rounded-sm overflow-hidden max-h-[512px] mb-4 w-fit h-full"
             />
