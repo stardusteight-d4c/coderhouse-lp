@@ -9,23 +9,23 @@
 The project consists of recreating the Coderhouse landing page, an online education platform focused on technology. For this, modern technologies were used, including React.js as the main library for building the user interface, and Next.js as the framework for server-side rendering and routing.
 
 Project dependencies include:
-<br />
+<br /><br />
 <strong>Tailwind CSS</strong>: A utility CSS framework that makes it easy to create responsive layouts and styles.
-<br />
+<br /><br />
 <strong>Embla Carousel React</strong>: A responsive image carousel library to display featured content interactively.
-<br />
+<br /><br />
 <strong>React Awesome Reveal</strong>: A library for creating elegant and responsive reveal animations.
-<br />
+<br /><br />
 <strong>React Countup</strong>: A library for creating numeric counting animations, useful for displaying statistics or dynamic numbers.
-<br />
+<br /><br />
 <strong>Radix UI React Icons</strong>: A library of scalable SVG icons to add visual elements to the interface.
-<br />
+<br /><br />
 <strong>Class Variance Authority</strong>: A library for generating variation classes based on property modifications.
-<br />
+<br /><br />
 <strong>Clsx</strong>: A library for conditionally generating style classes based on logical expressions.
-<br />
+<br /><br />
 <strong>PostCSS and Autoprefixer</strong>: Tools for post-compilation CSS style processing.
-<br />
+<br /><br />
 <strong>TypeScript</strong>: A typed programming language that offers advanced typing features to help you develop more robust applications.
 
 These tools and libraries were used to create a faithful recreation of the Coderhouse landing page, with a responsive layout, elegant animations, highlight carousels, and dynamic numeric counters. The project was also developed with a focus on maintainability and scalability, taking advantage of TypeScript to ensure code integrity and early error detection.
