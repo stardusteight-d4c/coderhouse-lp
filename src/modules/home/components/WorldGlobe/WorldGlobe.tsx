@@ -83,7 +83,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
           <Rotate
             duration={1000}
             delay={200}
-            className="rounded-full z-50 md:w-[666px] md:h-[670px]"
+            className="rounded-full overflow-hidden z-50 md:w-[666px] md:h-[670px]"
           >
             <video
               src="/assets/mp4/world-globe.mp4"
@@ -91,7 +91,7 @@ export const WorldGlobe: React.FC<WorldGlobeProps> = (
               loop
               playsInline
               muted
-              className="scale-110 rounded-full z-50 md:w-[666px] md:h-[670px]"
+              className="scale-125 md:scale-110 rounded-full z-50 md:w-[666px] md:h-[670px]"
             />
           </Rotate>
         </div>
